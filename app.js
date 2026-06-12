@@ -1,13 +1,11 @@
 // Patents Portal Controller
 
 // App State
-let activeFilter = 'All';
 let searchQuery = '';
 
 // Dom Elements
 const patentsGrid = document.getElementById('patents-grid');
 const searchInput = document.getElementById('search-input');
-const filterContainer = document.getElementById('filter-container');
 const themeLightBtn = document.getElementById('theme-light-btn');
 const themeDarkBtn = document.getElementById('theme-dark-btn');
 
@@ -71,48 +69,14 @@ function getEmbedUrl(url) {
 
 
 
-// Render dynamic filter buttons
-function renderFilters() {
-  // Extract unique high-level category families
-  const categories = ['All', ...new Set(patentsData.map(p => p.category))];
-  
-  filterContainer.innerHTML = '';
-  
-  categories.forEach(cat => {
-    const btn = document.createElement('button');
-    btn.className = `filter-btn ${cat === activeFilter ? 'active' : ''}`;
-    btn.textContent = cat;
-    btn.setAttribute('data-category', cat);
-    btn.addEventListener('click', () => {
-      activeFilter = cat;
-      // Update UI active states
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderPatents();
-    });
-    filterContainer.appendChild(btn);
-  });
-}
-
-// Render patent cards matching filters and search query
+// Render patent cards matching search query
 function renderPatents() {
   patentsGrid.innerHTML = '';
   
-  const filtered = patentsData.filter(patent => {
-    // Category check
-    const matchesCategory = activeFilter === 'All' || patent.category === activeFilter;
-    
-    // Search query check
-    const query = searchQuery.toLowerCase().trim();
-    const matchesSearch = !query || 
-      patent.title.toLowerCase().includes(query) ||
-      patent.abstract.toLowerCase().includes(query) ||
-      patent.category.toLowerCase().includes(query) ||
-      patent.features.some(f => f.toLowerCase().includes(query)) ||
-      patent.inventors.some(inv => inv.toLowerCase().includes(query));
-      
-    return matchesCategory && matchesSearch;
-  });
+  const query = searchQuery.toLowerCase().trim();
+  const filtered = patentsData.filter(patent =>
+    !query || patent.title.toLowerCase().includes(query)
+  );
 
   if (filtered.length === 0) {
     patentsGrid.innerHTML = `
@@ -199,7 +163,6 @@ searchInput.addEventListener('input', (e) => {
 // App Initialization
 function init() {
   initTheme();
-  renderFilters();
   renderPatents();
 }
 
