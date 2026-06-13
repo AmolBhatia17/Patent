@@ -32,7 +32,7 @@ const patentsData = [
     inventors: ["Research Team", "Dr. A. Bhatia"],
     abstract: "A novel bio-mimetic exoskeleton designed for injured or disabled limbless reptiles. By translating undulatory lateral body waves into mechanical leg-like locomotive force, the system restores mobility, adapts dynamically to terrain roughness, and uses low-power micro-actuation to assist walking cycles.",
     features: ["Bio-mimetic Control", "Undulatory Conversion", "Adaptive Gait Generation", "Ultra-lightweight Frame"],
-    videoUrl: "https://drive.google.com/file/d/1_bC_dEfGhIjKlMnOpQrStUvWxYz56789/view?usp=sharing" // Replace with actual Drive Link
+    videoUrl: "https://drive.google.com/file/d/1hHNmRQuniw7_2hXdT3h0RRve1qfa5j_i/view?usp=sharing" // Replace with actual Drive Link
   },
   {
     id: "patent-03",
