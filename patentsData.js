@@ -20,7 +20,7 @@ const patentsData = [
     inventors: ["Research Team", "Dr. A. Bhatia"],
     abstract: "A high-performance hardware multiplier design incorporating a retrofittable Carry-Request-Adder (CRA) architecture utilizing Radix-8 Booth encoding. The design significantly reduces critical path latency in Multiply-Accumulate (MAC) units within deep learning accelerators, minimizing dynamic power consumption while maintaining bit-level precision.",
     features: ["Radix-8 Booth Encoding", "CRA Integration", "Low-Latency MAC", "AI/ML Acceleration"],
-    videoUrl: "https://drive.google.com/drive/folders/1CIUXMjqvmdQkvVTldj-excrqiGezBxyh?usp=sharing" // Replace with actual Drive Link
+    videoUrl: "https://drive.google.com/file/d/1KZJhJdFQgCeuMkr2o87Btl9KngdYAJNr/view?usp=drivesdk" // Replace with actual Drive Link
   },
   {
     id: "patent-02",
