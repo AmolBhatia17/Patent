@@ -80,7 +80,7 @@ const patentsData = [
     inventors: ["Research Team", "Dr. A. Bhatia"],
     abstract: "A retrofittable Head-Up Display (HUD) integrated into standard motorcycle side-mirrors. The system utilizes a transparent OLED optical assembly driven by a low-power wireless smartphone connection to project high-contrast, non-obtrusive turn-by-turn navigation data directly into the rider's peripheral vision.",
     features: ["Transparent OLED Assembly", "Smart Mirror Retrofit", "Bluetooth HUD Link", "Turn-by-Turn Telemetry"],
-    videoUrl: "https://drive.google.com/file/d/1_fG_hIjKlMnOpQrStUvWxYz5678901/view?usp=sharing" // Replace with actual Drive Link
+    videoUrl: "https://drive.google.com/file/d/132YmTWKNO5UXuPF4S7m1MYxkMJt2Kr_u/view?usp=drive_link" // Replace with actual Drive Link
   },
   {
     id: "patent-07",
@@ -92,7 +92,7 @@ const patentsData = [
     inventors: ["Research Team", "Dr. A. Bhatia"],
     abstract: "An intelligent, internet-of-things (IoT) retrofittable inline power cut-off module. Using onboard current sensing and edge AI algorithms, it tracks battery degradation patterns, predicts full charge curves, and terminates power delivery to extend lithium-ion battery lifespans in legacy devices.",
     features: ["Edge Battery Diagnostics", "Smart IoT Cut-off", "Wireless Control App", "Battery Lifecycle Expansion"],
-    videoUrl: "https://drive.google.com/file/d/1_gH_iJkLmNoPqRsTuVwXyZ12345678/view?usp=sharing" // Replace with actual Drive Link
+    videoUrl: "https://drive.google.com/file/d/1QKea6iO5Ky4Xr9Aaj1sYu_cIqcw49Wv6/view?usp=drive_link" // Replace with actual Drive Link
   }
 ];
 
